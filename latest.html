@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>
+sanjay kumar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=0">
+<style type="text/css">
+#bk{
+width:1500px;
+height:1200px;
+background-image:url("https://res.cloudinary.com/dxipml8lk/image/upload/v1668326685/lat_edited_d89nzd.jpg");
+background-repeat:no-repeat;
+background-attachment:fixed;}
+
+#pic{
+
+width:1500px;
+height:1200px;
+background:#FFFFFF;
+}
+
+#for{
+width:500px;
+height:1200px;
+background:#FFFFFF;
+position:absolute;
+left:1000px;}
+
+#for table th{
+font-size:50px;
+color:#32CD32;}
+
+#for table td{
+font-size:40px;
+color:#90EE90;}
+
+html, body {
+	height: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: skyblue;
+}
+
+.box {
+	background: linear-gradient(to right, green, lightgreen);
+	color: white;
+	--width: 150px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2.5);
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid darkgoldenrod;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+}
+
+.box:hover {
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, transparent, white, transparent);
+	left: -100%;
+	transition: 0.5s;
+}
+
+.box:hover::before {
+	left: 100%;
+}
+
+.box a{
+text-decoration:none;}
+
+
+input[type=text]{
+width:80%;
+box-sizing:border-box;
+padding:12px 20px;
+font-size:20px;}
+
+Input[type=password]{
+width:80%;
+box-sizing:border-box;
+padding:12px 20px;
+font-size:20px;}
+
+input[type=date]{
+width:80%;
+box-sizing:border-box;
+padding:12px 20px;
+font-size:20px;}
+
+input[type=textarea]{
+width=90%;
+padding:12px 20px;
+box-sizing:border-box;
+}
+
+input[type=text]:focus{
+background-color:lightgreen;
+border:3px solid #555;}
+
+input[type=password]:focus{
+background-color:lightgreen;
+border:3px solid #555;}
+
+
+
+</style>
+</head>
+<body>
+<div id="pic">
+<div id="bk">
+<div id="for">
+
+<table width="500px" height="1000px" color="#FFFFFF" border="0" 
+cellpadding="10" align="center"   cellspacing="2">
+
+<th>Registration Form</th>
+<tr>
+<td>Enter Full Name</td>
+</tr>
+<tr rows="3" cols="40">
+<td>
+<input type="text" placeholder="enter name"></td>
+</tr>
+<tr>
+<td>E-Mail</td></tr>
+<tr>
+<td>
+<input type="text" placeholder="enter email">
+</td>
+</tr>
+<tr>
+<td>Password</td></tr>
+<tr>
+<td>
+<input type="password" placeholder="enter password">
+</td>
+</tr>
+<tr>
+<td>Re-enter password</td>
+</tr>
+<tr>
+<td>
+<input type="password" placeholder="Retype password">
+</td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+</td>
+</tr>
+<tr>
+<td>
+<input type="date">
+</td>
+</tr>
+<tr>
+<td>upload your resume</td>
+</tr>
+<tr>
+<td>
+<input type="file" placeholder="upload file">
+</td>
+</tr>
+<tr>
+<td>Address</td>
+</tr>
+<tr>
+<td>
+<textarea rows="3" cols="40">
+</textarea>
+</td>
+</tr>
+</table><br><br>
+<center>
+<div class="box"><a href="final.html">SUBMIT</a></div>
+
+<center>
+</div>
+</div>
+</div>
+</body>
+</html>
